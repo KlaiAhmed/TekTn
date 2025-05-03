@@ -49,7 +49,7 @@ TekTN/
 
 ## Demo
 
-[![Watch the demo](view/assets/thubnail.jpg)](https://vimeo.com/1081090287?share=copy)
+[![Watch the demo](view/assets/thubnail.png)](https://vimeo.com/1081090287?share=copy)
 
 
 
