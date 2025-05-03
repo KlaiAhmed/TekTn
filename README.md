@@ -45,7 +45,7 @@ TekTN/
 3. **Serve the application**
 
    * Place the project folder in your web server’s document root (e.g., `htdocs` for XAMPP).
-   * Visit [http://localhost/TekTN/index.php](http://localhost/TekTN/index.php) in your browser.
+   * Visit http://localhost/tektn/view/ in your browser.
 
 ## Demo
 
