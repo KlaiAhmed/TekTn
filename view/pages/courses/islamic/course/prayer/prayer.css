@@ -1,0 +1,121 @@
+:root {
+  --bg: #f5f7fa;
+  --card: #ffffff;
+  --primary: #4a90e2;
+  --text: #333333;
+  --muted: #777777;
+  --radius: 12px;
+  --spacing: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.prayer-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--spacing) * 3) 1rem;
+  min-height: 100vh;
+  font-size: 20px;
+}
+
+.container {
+  background: var(--card);
+  padding: calc(var(--spacing) * 2);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: var(--spacing);
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.recherche {
+  display: flex;
+  margin-bottom: var(--spacing);
+  overflow: hidden;
+  border-radius: calc(var(--radius) / 2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#location-input {
+  flex: 1;
+  padding: 1rem 1.25rem;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+}
+
+#recherche-btn {
+  padding: 0 1.5rem;
+  font-size: 1.5rem;
+  border: none;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+#recherche-btn:hover {
+  background: #357ab8;
+}
+
+#status {
+  color: var(--muted);
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing);
+  min-height: 1.2em;
+}
+
+.prayer-times {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.prayer-times li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1.5rem;
+}
+
+.prayer-times li:last-child {
+  border-bottom: none;
+}
+
+.prayer-times li {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: fadeInUp 0.4s forwards;
+}
+.prayer-times li:nth-child(1) { animation-delay: 0.1s; }
+.prayer-times li:nth-child(2) { animation-delay: 0.15s; }
+.prayer-times li:nth-child(3) { animation-delay: 0.2s; }
+.prayer-times li:nth-child(4) { animation-delay: 0.25s; }
+.prayer-times li:nth-child(5) { animation-delay: 0.3s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

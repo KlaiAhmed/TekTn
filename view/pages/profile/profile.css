@@ -1,0 +1,193 @@
+body{
+    margin-top: 80px;
+}
+
+a {
+    text-decoration: none !important;
+    cursor: pointer;
+  }
+
+/*progression*/
+#profile-progress {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    color: #333;
+}
+
+.progress-section {
+    margin-bottom: 20px;
+}
+
+.section-title {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.course-list,
+.certificate-list {
+    list-style: none;
+    padding: 0;
+}
+
+.course-item,
+.certificate-item {
+    background: #e9f5ff;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.course-item.completed {
+    background: #d4edda;
+    color: #155724;
+}
+
+.course-item.ongoing {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.streak-text {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#streak-bar {
+    background: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#streak-progress {
+    display: block;
+    height: 100%;
+    background: #28a745;
+    width: 70%;
+}
+
+.badge-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.badge {
+    background: #ffcc00;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* Profile */
+#personal-info {
+    position: relative;
+    padding: 20px;
+    max-width: 800px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.info-section {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.info-label {
+    font-weight: bold;
+    display: block;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.info-text {
+    background: #f8f9fa;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.info-input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: solid 1px #007bff;
+    background: #f8f9fa;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.btn-edit,
+.btn-save,
+.btn-cancel {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn-edit:hover,
+.btn-save:hover,
+.btn-cancel:hover {
+    background: #0056b3;
+}
+
+
+.btn-save {
+    background: #28a745;
+}
+
+.btn-save:hover {
+    background: #218838;
+}
+
+.btn-cancel {
+    background: #dc3545;
+    margin-left: 10px;
+}
+
+.btn-cancel:hover {
+    background: #c82333;
+}
+
+.action-buttons {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.error {
+    color: #dc3545;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #f8d7da;
+    border-radius: 5px;
+}
+
+.success {
+    color: #28a745;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #d4edda;
+    border-radius: 5px;
+}

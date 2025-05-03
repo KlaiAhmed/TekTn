@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    overflow: hidden;
+}
+
+.quran-section {
+    display: flex;
+    height: 89vh;
+    margin: 20px;
+    margin-top: 70px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .surah-container {
+    width: 100%;
+    max-width: 350px;
+    background: #f7faff;
+    padding: 15px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    border-right: 1px solid #ddd;
+  }
+
+  .surah-container h2 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 1.6em;
+    color: #007bff;
+  }
+
+  #surahSearch {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .surah-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .surah-list li {
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+  }
+
+  .surah-list li:hover {
+    background: #e9f5ff;
+  }
+
+  .surah-list li.active {
+    background: #cce5ff;
+  }
+
+  .surah-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    background: #fff;
+  }
+
+  .surah-content h3 {
+    margin-top: 0;
+    padding-right: 25px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 8px;
+    color: #007bff;
+    direction: rtl;
+  }
+
+  .ayah {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 8px 5px;
+    border-bottom: 1px dashed #ddd;
+    direction: rtl;
+    text-align: right;
+  }
+
+  .ayah-number {
+    color: #007bff;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    flex-shrink: 0;
+    font-size: 0.9em;
+  }
+
+  .ayah-text {
+    flex: 1;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .loading {
+    font-style: italic;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .quran-section {
+      flex-direction: column;
+    }
+    .surah-container {
+      max-width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+    }
+  }

@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+body {
+    margin-top: 120px;
+    background-color: #ecf2f7;
+    text-align: center;
+}
+
+.feedback-form {
+    font-family: "Roboto", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #5b6d91;
+    min-width: 280px;
+    padding-left: 64px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin-top: 80px;
+    font-weight: 400;
+    color: #5b6d91;
+}
+
+p {
+    font-size: medium;
+}
+
+#button {
+    font-size: 14px;
+    background-color: #92AAC7;
+    padding: 12px 26px;
+    border-radius: 40px;
+    width: 100%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#button:hover {
+    transform: translateY(-3px);
+    background-color: #5b6d91;
+}
+
+textarea,
+input {
+    border: none;
+    background-color: #fff;
+    font-size: 14px;
+    padding: 16px;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.04);
+    text-indent: 0;
+}
+
+input:hover,
+input:focus {
+    color: #000;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 980px;
+    margin: auto;
+    padding-top: 48px;
+    text-align: left;
+}
+
+.feedback-description {
+    max-width: 440px;
+    padding-bottom: 72px;
+}
+
+.feedback-description .subtitle {
+    font-size: 16px;
+}
+
+.feedback-description img {
+    display: block;
+    max-width: 76%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.feedback-form > * {
+    margin-bottom: 16px;
+}
+
+.feedback-form button {
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 674px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feedback-form {
+        padding-left: 0;
+    }
+    button {
+        width: 100%;
+    }
+}
+
+
+.alert {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #e6f4ea;
+    color: #2d6a4f;
+}
+
+.alert-danger {
+    background-color: #fcebea;
+    color: #b02a37;
+}
+
+
